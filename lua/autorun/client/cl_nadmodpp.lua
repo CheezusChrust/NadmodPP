@@ -138,7 +138,7 @@ function NADMOD.AdminPanel(Panel, runByNetReceive)
 	if Panel then
 		if !NADMOD.AdminCPanel then NADMOD.AdminCPanel = Panel end
 	end
-	Panel:ClearControls()
+	Panel:Clear()
 
 	local nonadmin_help = Panel:Help("")
 	nonadmin_help:SetAutoStretchVertical(false)
@@ -231,7 +231,7 @@ end)
 
 function NADMOD.ClientPanel(Panel)
 	RunConsoleCommand("npp_refreshfriends")
-	Panel:ClearControls()
+	Panel:Clear()
 	if !NADMOD.ClientCPanel then NADMOD.ClientCPanel = Panel end
 	Panel:SetName("NADMOD - Client Panel")
 	
